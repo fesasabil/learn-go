@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main()  {
+func main() {
 	var firstName string = "Zayn"
 
 	var lastName string
@@ -10,6 +10,4 @@ func main()  {
 
 
 	fmt.Printf("Hello %s %s!\n", firstName, lastName)
-	
-	
 }
