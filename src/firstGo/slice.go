@@ -107,4 +107,38 @@ func main() {
 	fmt.Println(fruitsss)  // ["apple", "grape", "papaya"]
 	fmt.Println(bFruitss) // ["apple", "grape"]
 	fmt.Println(cFruits) // ["apple", "grape", "papaya"]
+
+	// Fungsi copy()
+	dst := make([]string, 3)
+	src := []string{"watermelon", "pinnaple", "apple", "orange"}
+	n := copy(dst, src)
+
+	fmt.Println(dst) // watermelon pinnaple apple
+	fmt.Println(src) // watermelon pinnaple apple orange
+	fmt.Println(n)   // 3
+
+	opm := []string{"potato", "potato", "potato"}
+	sbr := []string{"watermelon", "pinnaple"}
+	p := copy(opm, sbr)
+
+	fmt.Println(opm) // watermelon pinnaple potato
+	fmt.Println(sbr) // watermelon pinnaple
+	fmt.Println(p)   // 2
+
+	// Pengaksesan Elemen Slice Dengan 3 Indeks
+	var animals = []string{"lion", "giraffe", "wolf"}
+	var aAnimals = animals[0:2]
+	var bAnimals = animals[0:2:2]
+
+	fmt.Println(animals)      // ["apple", "grape", "banana"]
+	fmt.Println(len(animals)) // len: 3
+	fmt.Println(cap(animals)) // cap: 3
+
+	fmt.Println(aAnimals)      // 
+	fmt.Println(len(aAnimals)) // len: 2
+	fmt.Println(cap(aAnimals)) // cap: 3
+
+	fmt.Println(bAnimals)      
+	fmt.Println(len(bAnimals)) // len: 2
+	fmt.Println(cap(bAnimals)) // cap: 2
 }
