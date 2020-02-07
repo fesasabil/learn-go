@@ -65,5 +65,14 @@ func main()  {
 		fmt.Println("item is not exists")
 	}
 
-	// 
+	//  Kombinasi Slice & Map
+	var foods = []map[string]string{
+		map[string]string{"name": "hotdog", "price": "murah"},
+		map[string]string{"name": "burger", "price": "murah"},
+		map[string]string{"name": "KFC", "price": "mahal"},
+	}
+
+	for _, food := range foods {
+		fmt.Println(food["price"], food["name"])
+	}
 }
