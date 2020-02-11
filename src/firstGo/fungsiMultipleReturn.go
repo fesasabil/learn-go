@@ -28,5 +28,11 @@ func main()  {
     area = math.Pi * math.Pow(d / 2, 2)
     circumference = math.Pi * d
 
-    return
+	return
+	
+// Penggunaan Fungsi math.Pow()
+		fungsi math.Pow() digunakan untuk memangkatkan nilai. math.Pow(2, 3) berarti 2 pangkat 3, hasilnya 8. fungsi ini berada dalam package math.
+
+// Penggunaan Konstanta math.Pi
+		math.Pi adalah konstanta bawaan package math yang merepresentasikan Pi atau 22/7.
 */
