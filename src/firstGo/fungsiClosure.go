@@ -80,8 +80,8 @@ func main()  {
 	var howMany,  getNumbers = findMax(numbers, max)
 	var theNumbers = getNumbers()
 
-	fmt.Println("numbers\t:", numbers)
-	fmt.Printf("find \t: %d\n\n", max)
+	fmt.Println("numbers\t:", numbers) // [2 3 0 4 3 2 0 4 2 0 3]
+	fmt.Printf("find \t: %d\n\n", max) // 3
 
 	fmt.Println("found \t:", howMany)	// 9
 	fmt.Println("value \t:", theNumbers)	// [2 3 0 3 2 0 2 0 3]
